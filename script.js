@@ -3,7 +3,9 @@ const display = document.getElementById('value');
 let result = '';
 
 function appendToDisplay(input) {
-    if (display.value === '0') {
+    if(display.value === '0' && input === '.') {
+        display.value += input
+    } else if (display.value === '0') {
         display.value = input
     } else {
     display.value += input
