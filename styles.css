@@ -1,7 +1,10 @@
 * {
     font-family: Lexend, Arial;
 }
-
+html, body {
+    touch-action: manipulation;
+    -ms-touch-action: manipulation; /* For IE/Edge */
+}
 body {
     background-color: black;
 }

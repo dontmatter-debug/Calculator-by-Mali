@@ -3,7 +3,11 @@ const display = document.getElementById('value');
 let result = '';
 
 function appendToDisplay(input) {
+    if (display.value === '0') {
+        display.value = input
+    } else {
     display.value += input
+}
 }
 
 
@@ -17,5 +21,5 @@ function calculate() {
 
 
 function reset() {
-    display.value = ''
+    display.value = '0';
 }
